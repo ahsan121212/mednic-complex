@@ -32,7 +32,7 @@ medical/
 │   │   ├── routes/api.js     # API Endpoints (/api/appointments, /api/contact)
 │   │   └── server.js         # Entry Point
 │   ├── package.json
-│   └── .env.example
+│   └── .env
 ├── frontend/                 # Next.js 14 Web Application
 │   ├── public/images/        # High-Quality AI Generated Assets
 │   ├── src/
