@@ -14,9 +14,7 @@ const app = express();
 
 // Middlewares
 app.use(cors({
-  origin: '*', // Allow all origins for dev/testing, customize for prod
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  origin: "https://mednic-complex.vercel.app"
 }));
 app.use(express.json());
 
