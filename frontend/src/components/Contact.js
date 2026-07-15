@@ -25,7 +25,7 @@ export default function Contact() {
     setLoading(true);
     setStatus(null);
 
-    const API_URL = "https://mednic-complex.onrender.com";
+    const API_URL = "https://mednic-complex.onrender.com/api";
 
     try {
       const response = await fetch(`${API_URL}/contact`, {
