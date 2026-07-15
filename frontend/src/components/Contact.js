@@ -25,10 +25,10 @@ export default function Contact() {
     setLoading(true);
     setStatus(null);
 
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+    const API_URL = "https://mednic-complex.onrender.com";
 
     try {
-      const response = await fetch(`${apiUrl}/contact`, {
+      const response = await fetch(`${API_URL}/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
