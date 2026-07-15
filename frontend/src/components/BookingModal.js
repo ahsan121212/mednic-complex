@@ -29,16 +29,15 @@ export default function BookingModal({ isOpen, onClose, preselectedService = '' 
     setLoading(true);
     setStatus(null);
 
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
-
+    const API_URL = "https://mednic-complex.onrender.com/api";
     try {
-      const response = await fetch(`${apiUrl}/appointments`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
-      });
+      const response = await fetch(`${API_URL}/appointment`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  });
 
       const data = await response.json();
 
